@@ -4,16 +4,14 @@ This project demonstrates how to use Google’s ExoPlayer as a fully functional 
 It provides a clean example setup with essential permissions, Gradle dependencies, XML layout, and Java implementation.
 
 ## 📑 Table of Contents
-📘 Overview
-🧾 Manifest Permissions
-⚙️ Activity Configuration
-📦 Gradle Dependencies
-🧩 Layout: activity_main.xml
-💻 Code: MainActivity.java
-📚 References
-👨‍💻 Author
-📘 Overview
-
+- [📘 Overview](#-overview)
+- [🧾 Manifest Permissions](#-manifest-permissions)
+- [⚙️ Activity Configuration](#️-activity-configuration)
+- [📦 Gradle Dependencies](#-gradle-dependencies)
+- [🧩 Layout: activity_main.xml](#-layout-activity_mainxml)
+- [💻 Code: MainActivity.java](#-code-mainactivityjava)
+- [📚 References](#-references)
+- [👨‍💻 Author](#️-author)
 
 ExoPlayer is an open-source media player library developed by Google for Android.
 It provides advanced features compared to the native MediaPlayer, such as DASH streaming, DRM, and smooth playback customization.
