@@ -21,15 +21,16 @@ This project helps you integrate ExoPlayer as a video player in your Android app
 ## 🧾 Manifest Permissions
 
 Add the following permissions inside your AndroidManifest.xml file:
-
+```
 <uses-permission android:name="android.permission.INTERNET" />
 <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+```
 
 ## ⚙️ Activity Configuration
 
 In your AndroidManifest.xml, add the following inside your <activity> tag for the VideoPlayer Activity:
-
+```
 <activity
     android:name=".MainActivity"
     android:configChanges="orientation|screenSize|layoutDirection"
@@ -39,7 +40,7 @@ In your AndroidManifest.xml, add the following inside your <activity> tag for th
         <category android:name="android.intent.category.LAUNCHER" />
     </intent-filter>
 </activity>
-
+```
 
 The android:configChanges flag ensures the player handles orientation and screen size changes smoothly.
 
