@@ -58,7 +58,7 @@ implementation "androidx.media3:media3-ui:1.8.0"
 ## 🧩 Layout: activity_main.xml
 
 Your main layout includes the PlayerView for displaying video content.
-
+```
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -82,11 +82,13 @@ Your main layout includes the PlayerView for displaying video content.
         app:show_vr_button="true"
         app:use_controller="true" />
 </RelativeLayout>
+```
 
 ## 💻 Code: MainActivity.java
 
 Below is the full implementation using ExoPlayer to load and play a sample MP4 video.
 
+```
 package com.example.exoplayer;
 
 import android.os.Bundle;
@@ -143,7 +145,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 }
-
+```
 ## 📚 References
 
 Official ExoPlayer Documentation
