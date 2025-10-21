@@ -1,9 +1,9 @@
-🎬 ExoPlayer-as-VideoPlayer
+## 🎬 ExoPlayer-as-VideoPlayer
 
 This project demonstrates how to use Google’s ExoPlayer as a fully functional video player in your Android app.
 It provides a clean example setup with essential permissions, Gradle dependencies, XML layout, and Java implementation.
 
-📑 Table of Contents
+## 📑 Table of Contents
 📘 Overview
 🧾 Manifest Permissions
 ⚙️ Activity Configuration
