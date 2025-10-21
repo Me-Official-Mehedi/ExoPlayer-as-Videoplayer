@@ -1,4 +1,4 @@
-# VideoPlayer---Exoplayer-Google-Player- ℹ️ (Will Be Added By Git Push Later)
+# ExoPlayer-as-VideoPlayer
 This project helps to use exoplayer as videoplayer. This is a built in product from Google.
 
 # VideoPlayer---Expplayer
