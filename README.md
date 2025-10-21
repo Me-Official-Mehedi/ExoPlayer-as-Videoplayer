@@ -48,11 +48,12 @@ The android:configChanges flag ensures the player handles orientation and screen
 
 Add the following ExoPlayer dependencies to your app-level build.gradle file.
 (Official reference: ExoPlayer Hello World)
-
+```
 // Video Player Library
 implementation "androidx.media3:media3-exoplayer:1.8.0"
 implementation "androidx.media3:media3-exoplayer-dash:1.8.0"
 implementation "androidx.media3:media3-ui:1.8.0"
+```
 
 ## 🧩 Layout: activity_main.xml
 
