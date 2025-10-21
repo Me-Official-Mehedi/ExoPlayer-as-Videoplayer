@@ -11,7 +11,6 @@ It provides a clean example setup with essential permissions, Gradle dependencie
 - [🧩 Layout: activity_main.xml](#-layout-activity_mainxml)
 - [💻 Code: MainActivity.java](#-code-mainactivityjava)
 - [📚 References](#-references)
-- [👨‍💻 Author](#️-author)
 
 ExoPlayer is an open-source media player library developed by Google for Android.
 It provides advanced features compared to the native MediaPlayer, such as DASH streaming, DRM, and smooth playback customization.
