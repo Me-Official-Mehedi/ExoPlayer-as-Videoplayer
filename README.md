@@ -21,24 +21,26 @@ This project helps you integrate ExoPlayer as a video player in your Android app
 
 Add the following permissions inside your AndroidManifest.xml file:
 ```
-<uses-permission android:name="android.permission.INTERNET" />
-<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+<uses-permission android:name="android.permission.INTERNET"/>
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
 ```
 
 ## ⚙️ Activity Configuration
 
 In your AndroidManifest.xml, add the following inside your <activity> tag for the VideoPlayer Activity:
+
 ```
 <activity
-    android:name=".MainActivity"
-    android:configChanges="orientation|screenSize|layoutDirection"
-    android:exported="true">
-    <intent-filter>
-        <action android:name="android.intent.action.MAIN" />
-        <category android:name="android.intent.category.LAUNCHER" />
-    </intent-filter>
-</activity>
+            android:name=".MainActivity"
+            android:configChanges="orientation|screenSize|layoutDirection"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
 ```
 
 The android:configChanges flag ensures the player handles orientation and screen size changes smoothly.
@@ -46,12 +48,13 @@ The android:configChanges flag ensures the player handles orientation and screen
 ## 📦 Gradle Dependencies
 
 Add the following ExoPlayer dependencies to your app-level build.gradle file.
-(Official reference: ExoPlayer Hello World)
+(Official reference: ExoPlayer Hello World) # Add gradle from net https://developer.android.com/media/media3/exoplayer/hello-world#groovy
 ```
-// Video Player Library
-implementation "androidx.media3:media3-exoplayer:1.8.0"
-implementation "androidx.media3:media3-exoplayer-dash:1.8.0"
-implementation "androidx.media3:media3-ui:1.8.0"
+//Video Player Library
+    implementation "androidx.media3:media3-exoplayer:1.8.0"
+    implementation "androidx.media3:media3-exoplayer-dash:1.8.0"
+    implementation "androidx.media3:media3-ui:1.8.0"
+
 ```
 
 ## 🧩 Layout: activity_main.xml
@@ -74,12 +77,15 @@ Your main layout includes the PlayerView for displaying video content.
         android:focusable="true"
         android:focusableInTouchMode="true"
         android:keepScreenOn="true"
+        android:padding="0dp"
         app:auto_show="true"
         app:resize_mode="fill"
         app:show_buffering="when_playing"
         app:show_shuffle_button="true"
         app:show_vr_button="true"
-        app:use_controller="true" />
+        app:use_controller="true"
+        />
+
 </RelativeLayout>
 ```
 
@@ -119,7 +125,9 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-        // Initialize ExoPlayer
+        //=================================================================================
+
+        //Initialize
         playerView = findViewById(R.id.playerView);
         ExoPlayer exoPlayer = new ExoPlayer.Builder(this).build();
         playerView.setPlayer(exoPlayer);
@@ -130,7 +138,6 @@ public class MainActivity extends AppCompatActivity {
         exoPlayer.prepare();
         exoPlayer.play();
 
-        // Handle fullscreen toggle
         playerView.setFullscreenButtonClickListener(isFullscreen -> {
             if (isFullscreen) {
                 playerView.getLayoutParams().height = ViewGroup.LayoutParams.MATCH_PARENT;
@@ -142,9 +149,12 @@ public class MainActivity extends AppCompatActivity {
                 playerView.setLayoutParams(layoutParams);
             }
         });
+    //=================================================================================
+
     }
 }
 ```
+
 ## 📚 References
 
 Official ExoPlayer Documentation
